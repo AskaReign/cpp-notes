@@ -1,5 +1,8 @@
 # cpp-notes
-## call by reference vs call by value
+## Parameters vs Arguments
+- **Parameters:** are part of the function's **definition**.
+- **Arguments:** are part of the function's **call**.
+## Call  by Reference vs Call by Value
 <table>
   <caption>table 1.1</caption>
   <tr>
@@ -56,7 +59,7 @@ int main() {
 
 ```
 
-2. Call By Reference
+2. Call by Reference
 ```cpp
 void changeValue(int &x) { 
     x = 100;  // changes the original
