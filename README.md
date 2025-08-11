@@ -1,6 +1,7 @@
 # cpp-notes
 ## call by reference vs call by value
 <table>
+  <caption>table 1.1</caption>
   <tr>
     <th>aspect</th>
     <th>pass by value</th>
