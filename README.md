@@ -1,4 +1,5 @@
 # cpp-notes
+:star: Some C++ points to wrap your head around!
 ## Parameters vs Arguments
 - **Parameters:** are part of the function's **definition**.
 - **Arguments:** are part of the function's **call**.
