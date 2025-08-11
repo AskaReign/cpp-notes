@@ -72,46 +72,40 @@ int main() {
     cout << a;  // Output: 100
 }
 ```
-### :dart: Example Problem(Two Sum II):
-Given a sorted array of size n and an integer target, find indices (1-based) of two numbers that add up to target.<br>
-Assume exactly one solution exists.
+### :dart: Example Problem:
+Swap two numbers in-place without returning anything.
 ```cpp
 #include <iostream>
-#include <vector>
 using namespace std;
 
-// Finds two numbers that sum to 'target'.
-// Indices are returned via reference parameters: idx1, idx2.
-void findTwoSum(const vector<int>& arr, int target, int &idx1, int &idx2) {
-    int left = 0, right = arr.size() - 1;
-    
-    while (left < right) {
-        int sum = arr[left] + arr[right];
-        if (sum == target) {
-            idx1 = left + 1; // converting to 1-based index
-            idx2 = right + 1;
-            return; // Found solution
-        }
-        else if (sum < target) {
-            left++;
-        }
-        else {
-            right--;
-        }
-    }
+void swapNumbers(int &a, int &b) { // pass-by-reference
+    int temp = a;
+    a = b;
+    b = temp;
 }
 
 int main() {
-    vector<int> arr = {2, 7, 11, 15};
-    int target = 9;
-
-    int index1, index2; // These will be modified via reference
-    findTwoSum(arr, target, index1, index2);
-
-    cout << "Indices: " << index1 << " and " << index2 << endl;
-    return 0;
+    int x = 5, y = 10;
+    swapNumbers(x, y); // modifies originals
+    cout << x << " " << y << "\n"; // 10 5
 }
 
+```
+If we didn't use pass by reference:
+```cpp
+#include <iostream>
+using namespace std;
 
+void swapNumbers(int a, int b) { // pass-by-value (copies)
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x = 5, y = 10;
+    swapNumbers(x, y); // swaps only copies
+    cout << x << " " << y << "\n"; // Output: 5 10 ❌
+}
 ```
 
