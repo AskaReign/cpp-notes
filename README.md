@@ -1,2 +1,2 @@
 # cpp-notes
-some notes I've taken while learning c++
+some notes I've taken while working with c++
