@@ -6,7 +6,7 @@ These states are stored in a **stack** data structure — think of it like a pil
 - Each new zoom action **pushes** a new zoom rectangle onto the stack.
 - When you zoom out (usually by right-click or a “zoom out” command), the zoomer **pops** the top zoom rectangle off the stack, returning to the previous zoom level.
 ## How does zooming work in Qwt?
-### QwtPlotZoomer
+### <a href="https://qwt.sourceforge.io/class_qwt_plot_zoomer.html" target="_blank">QwtPlotZoomer</a>
 **QwtPlotZoomer** provides **stacked zooming** for a plot widget.
 <figure>
   <img src="./images/QwtPlotZoomer.PNG" alt="Inheritance diagram for QwtPlotZoomer
