@@ -5,5 +5,8 @@ When you zoom in (e.g., by drawing a rectangle), the plot records the current vi
 These states are stored in a **stack** data structure — think of it like a pile of zoom **“snapshots.”**
 - Each new zoom action **pushes** a new zoom rectangle onto the stack.
 - When you zoom out (usually by right-click or a “zoom out” command), the zoomer **pops** the top zoom rectangle off the stack, returning to the previous zoom level.
-
-![Alt text]()
+<figure>
+  <img src="./images/QwtPlotZoomer.PNG" alt="Inheritance diagram for QwtPlotZoomer
+" width="250"/>
+  <figcaption>This is the caption for the image</figcaption>
+</figure>
