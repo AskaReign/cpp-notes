@@ -3,6 +3,7 @@
 ## Parameters vs Arguments
 - **Parameters:** are part of the function's **definition**.
 - **Arguments:** are part of the function's **call**.
+  
 ## Call by Reference vs Call by Value
 > :cyclone: I personally found this topic very confusing at first, so you’re definitely not alone.
 I believe you won’t truly understand it in depth until you face a problem where using these concepts is the only option.
